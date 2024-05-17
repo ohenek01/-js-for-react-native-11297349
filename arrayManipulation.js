@@ -8,3 +8,13 @@ const processArray = (arr) => {
         } 
       }  
     )}
+
+    const formatArrayStrings = (stringArray, numberArray) => {
+        return stringArray.map((str, index) => {
+            if(numberArray[index] % 2 === 0){
+               str.toUpperCase();
+          }else{
+             str.toLowerCase();
+          }
+        });
+    }
